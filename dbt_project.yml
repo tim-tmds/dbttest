@@ -33,4 +33,17 @@ models:
   dbttest:
       # Applies to all files under models/example/
       example:
-          materialized: view
+        materialized: view
+      # Applies to all files under models/02_standardization/
+      02_standardization:
+        materialized: view
+        schema: 02_standardization
+      # Applies to all files under models/03_merging/
+      03_merging: 
+        materialized: view
+        schema: 03_merging
+      # Applies to all files under models/tiff/
+      tiff:
+        materialized: view
+        schema: tiff
+
